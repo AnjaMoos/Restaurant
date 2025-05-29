@@ -1,0 +1,229 @@
+<html>
+
+<head>
+  <title>Restaurant</title>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Noto+Sans+PhagsPa&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+PhagsPa&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0px;
+      font-family: "Open Sans", sans-serif;
+
+    }
+
+    .main {
+      padding-left: 10%;
+      padding-right: 5%;
+      margin-bottom: 64px;
+    }
+
+    .title {
+      color: #e77e0e;
+      font-size: 54px;
+      filter: drop-shadow(5px 6px 2px rgb(0, 0, 0));
+    }
+
+    .menu {
+      position: absolute;
+      top: 32px;
+      right: 100px;
+    }
+
+    h2 {
+      font-family: "Pacifico", cursive;
+    }
+
+    .atf-image {
+      width: 100%;
+      height: 500;
+      object-fit: cover;
+    }
+
+    .main-container {
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      color: white;
+      height: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    p{
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+    }
+
+    .googlemaps {
+      width: 100%;
+      height: 450;
+      padding-right: 100px;
+    }
+
+    .footer {
+      background-color: rgb(35, 38, 41);
+      color: white;
+      padding: 100px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0px;
+    }
+
+    .footer-link {
+      color: white;
+      text-decoration: none;
+      display: flex;
+    }
+
+    .footer-link:hover {
+      text-decoration: underline;
+      color: orange;
+    }
+
+    .link {
+      display: flex;
+
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 32px;
+    }
+
+    .menu a:hover {
+      color: #e77e0e;
+      filter: drop-shadow(5px 6px 2px rgb(0, 0, 0));
+    }
+
+    .order-btn {
+      color: black !important;
+      background-color: #e77e0e;
+      padding: 16px;
+    }
+
+    a{
+      color: #e77e0e;
+      text-decoration: none;
+    }
+
+    a:hover{
+       filter: drop-shadow(5px 6px 2px rgb(0, 0, 0));
+       text-decoration: underline;
+    }
+  </style>
+
+
+</head>
+
+
+
+<body>
+
+  <img class="atf-image" src="./img/aot.jpg">
+
+  <div class="main">
+    <div class="main-container">
+      <h1 class="title">Herzlich Willkommen</h1>
+      <p>Hier findest du einen Überblick über unsere Speisen.</p>
+    </div>
+
+    <div class="menu">
+      <a href="#contact">RESERVIEREN</a>
+      <a class="order-btn" href="">BESTELL ONLINE</a>
+      <a href="#menu">TAGESKARTE</a>
+      <a href="#adress">ANFAHRT</a>
+    </div>
+
+    <h2>Unsere Öffnungszeiten</h2>
+
+    <table>
+
+      <tr>
+        <td>Mo - Fr:</td>
+        <td>12:00 - 23:00 Uhr</td>
+      </tr>
+      <tr>
+        <td>Sa:</td>
+        <td>11:00 - 24:00 Uhr</td>
+      </tr>
+      <tr>
+        <td>So:</td>
+        <td>11:00 - 24:00 Uhr</td>
+      </tr>
+
+
+    </table>
+
+    <h2>Anfahrt</h2>
+    Unsere Adresse lautet: Bistumerweg 39, 85276 Pfaffenhofen <br>
+
+    <iframe class="googlemaps" id="adress"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84588.50072587834!2d11.425921252094371!3d48.50657559320539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e5eba3ac839b9%3A0x4506e3be7030ebb0!2sBistumerweg%2039%2C%2085276%20Pfaffenhofen%20an%20der%20Ilm!5e0!3m2!1sde!2sde!4v1748450374114!5m2!1sde!2sde"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h2>Tageskarte</h2>
+    <table style="display: flex; justify-content: space-between;">
+      <tr>
+        <td>1 Rehragout </td>
+        <td>14,99€</td>
+
+      </tr>
+      <tr>
+        <td>2 Wiener Schnitzel</td>
+        <td>12,99€</td>
+
+      </tr>
+      <tr>
+        <td>3 Käsespätzle </td>
+        <td>9,99€</td>
+
+      </tr>
+      <tr>
+        <td>4 Apfelstrudel </td>
+        <td>4,00€</td>
+      </tr>
+
+    </table>
+    <br><br>
+    <hr>
+    Jetzt die <strong>Tageskarte</strong> <a id="menu" href="./downloads/tageskarte.pdf"
+      target="_blank">herunterladen</a>
+    <hr>
+    <h2 id="contact">Kontakt</h2>
+    So kannst du uns kontaktieren: <br>
+    Telefon: <a href="tel:01547532405964835">01547532405964835</a><br>
+    E-Mail: <a href="mailto:anja.moosbuehler@web.de">anja.moosbuehler@web.de</a>
+  </div>
+
+  <br> <br>
+  <div class="footer main">
+    <div>
+      (c) Copyright 2025 Anja Moosbühler GmbH
+    </div>
+    <div class="link">
+      <a class="footer-link" href="impressum.html">Impressum</a> | <a class="footer-link"
+        href="datenschutz.html">Datenschutz</a>
+    </div>
+  </div>
+</body>
+
+</html>
